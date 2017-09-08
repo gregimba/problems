@@ -8,6 +8,19 @@
 # Difficulty: medium.
 
 def is_power_of_two?(num)
+	if num == 0
+		return false
+	elsif num == 1
+		return true
+	end
+
+	while num % 2 == 0
+		num = num / 2
+		if num == 2
+			return true
+		end
+	end
+	return false
 end
 
 # These are tests to check that your code is working. After writing

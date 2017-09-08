@@ -5,6 +5,17 @@
 # Difficulty: medium.
 
 def nearby_az(string)
+	if string.count("a") == 0
+		return false
+	end
+	index = string.index('a')
+	sub_string = string[index,4]
+
+	if sub_string.count("z") > 0
+		return true
+	else 
+		return false
+	end
 end
 
 # These are tests to check that your code is working. After writing
