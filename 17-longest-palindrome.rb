@@ -30,6 +30,10 @@ def palindrome?(string)
 end
 
 def longest_palindrome(string)
+  string.length.downto(1) do |n|
+    palindrome = string.chars.each_cons(n).find { |b| b == b.reverse }
+    return palindrome.join if palindrome
+  end
 end
 
 # These are tests to check that your code is working. After writing

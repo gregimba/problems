@@ -5,6 +5,7 @@
 # Difficulty: medium.
 
 def greatest_common_factor(number1, number2)
+	return number1.gcd(number2)
 end
 
 # These are tests to check that your code is working. After writing
