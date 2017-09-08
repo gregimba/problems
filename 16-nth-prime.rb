@@ -1,28 +1,11 @@
+require "Prime"
 # Write a method that returns the `n`th prime number. Recall that only
 # numbers greater than 1 can be prime.
 #
 # Difficulty: medium.
 
-# You may use our `is_prime?` solution.
-def is_prime?(number)
-  if number <= 1
-    # only numbers > 1 can be prime.
-    return false
-  end
-
-  idx = 2
-  while idx < number
-    if (number % idx) == 0
-      return false
-    end
-
-    idx += 1
-  end
-
-  return true
-end
-
 def nth_prime(n)
+  Prime.take(n).last
 end
 
 # These are tests to check that your code is working. After writing
