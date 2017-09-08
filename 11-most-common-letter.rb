@@ -5,6 +5,18 @@
 # Difficulty: medium.
 
 def most_common_letter(string)
+	count = 0
+	letter = ""
+
+	string.split("").each do |char|
+		if count < string.count(char)
+			count = string.count(char)
+			letter = char
+		end
+	end
+
+	return [letter,count]
+
 end
 
 # These are tests to check that your code is working. After writing

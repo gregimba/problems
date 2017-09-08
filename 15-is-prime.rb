@@ -1,3 +1,4 @@
+require "Prime"
 # Write a method that takes in an integer (greater than one) and
 # returns true if it is prime; otherwise return false.
 #
@@ -13,6 +14,7 @@
 # Difficulty: medium.
 
 def is_prime?(number)
+	return Prime.prime?(number)
 end
 
 # These are tests to check that your code is working. After writing

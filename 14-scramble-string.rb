@@ -5,6 +5,9 @@
 # Difficulty: medium.
 
 def scramble_string(string, positions)
+	word = ""
+	positions.each { |pos| word += string[pos]  }
+	return word
 end
 
 # These are tests to check that your code is working. After writing

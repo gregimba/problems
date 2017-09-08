@@ -8,6 +8,17 @@
 # Difficulty: medium.
 
 def dasherize_number(num)
+	nums = num.to_s.split("")
+
+	if nums.first.to_i % 2 != 0
+		nums[0] = "#{nums.first}-"
+	end
+
+	if nums.last.to_i % 2 != 0
+		nums[nums.length - 1] = "-#{nums.last}"
+	end
+
+	return nums * ""
 end
 
 # These are tests to check that your code is working. After writing
