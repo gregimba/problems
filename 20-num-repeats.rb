@@ -7,6 +7,16 @@
 # Difficulty: hard.
 
 def num_repeats(string)
+	total = 0
+	chars = string.chars.uniq
+
+	chars.each do | char |
+		if string.count(char) >= 2
+			total += 1
+		end
+	end
+
+	return total
 end
 
 # These are tests to check that your code is working. After writing
