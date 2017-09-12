@@ -24,6 +24,12 @@
 # information, we would not give it to you on the timed challenge. :-)
 
 def caesar_cipher(offset, string)
+	array = string.split("")
+	array.collect { |char| char.ord }
+
+	array.each do |char|
+		puts char
+	end
 end
 
 # These are tests to check that your code is working. After writing
